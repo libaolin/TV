@@ -31,10 +31,11 @@ public class DKPlayer extends FrameLayout {
         init();
     }
 
-
     private void init() {
-        native_init();
+        _init();
     }
 
-    private native void native_init();
+    private native int _init();
+
+    private native int _setDataSource(String filePath);
 }
